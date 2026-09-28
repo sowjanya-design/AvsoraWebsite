@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import PrivacyModal from './PrivacyModal';
+import { Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   const [privacyOpen, setPrivacyOpen] = useState(false);
@@ -17,11 +18,11 @@ export default function Footer() {
             <p>Enterprise SAP consulting delivering intelligent, scalable, and future-ready solutions powered by SAP BTP, AI, and S/4HANA.</p>
             <div className="footer-socials">
               <a href="https://www.instagram.com/avsora_software" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram (@avsora_software)">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <Instagram size={18} />
                 <span>@avsora_software</span>
               </a>
               <a href="https://www.linkedin.com/company/avsora-software" target="_blank" rel="noopener noreferrer" aria-label="Connect with Avsora Software on LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <Linkedin size={18} />
                 <span>Avsora Software</span>
               </a>
             </div>

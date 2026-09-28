@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import { CheckCircle } from 'lucide-react';
 
 export default function ContactForm() {
   const [status, setStatus] = useState<'' | 'loading' | 'success'>('');
@@ -46,8 +47,8 @@ export default function ContactForm() {
           {status === 'loading' ? 'Sending...' : 'Send Message'}
         </button>
         {status === 'success' && (
-          <div className="form-success" style={{ display: 'block' }}>
-            ✅ Message sent! We typically respond within 24 hours.
+          <div className="form-success" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+            <CheckCircle size={18} /> Message sent! We typically respond within 24 hours.
           </div>
         )}
       </form>

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Target, Lightbulb, Handshake, ShieldCheck, Rocket, Globe, Zap, Award, RefreshCw, PhoneCall } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Us | Avsora Software',
@@ -18,38 +19,44 @@ export default function About() {
               <p>Our team brings together certified SAP professionals who are passionate about innovation, committed to quality, and focused on building long-term partnerships with every client we serve.</p>
               <div className="about-values">
                 <div className="value-item">
-                  <span className="value-icon">🎯</span>
+                  <span className="value-icon"><Target size={20} /></span>
                   <div><h3>Outcome-Driven</h3><p>Every engagement is measured by real business results, not just deliverables.</p></div>
                 </div>
                 <div className="value-item">
-                  <span className="value-icon">💡</span>
+                  <span className="value-icon"><Lightbulb size={20} /></span>
                   <div><h3>Innovation First</h3><p>We stay ahead of SAP roadmaps and bring cutting-edge AI capabilities to every project.</p></div>
                 </div>
                 <div className="value-item">
-                  <span className="value-icon">🤝</span>
+                  <span className="value-icon"><Handshake size={20} /></span>
                   <div><h3>Long-Term Partnership</h3><p>We invest in understanding your business to become a trusted technology advisor.</p></div>
                 </div>
                 <div className="value-item">
-                  <span className="value-icon">🔒</span>
+                  <span className="value-icon"><ShieldCheck size={20} /></span>
                   <div><h3>Quality &amp; Compliance</h3><p>Rigorous checks and adherence to SAP best practices on every engagement.</p></div>
                 </div>
               </div>
             </div>
             <div className="about-visual" aria-hidden="true">
               <div className="about-visual-item">
-                <div className="avi-icon">🚀</div>
-                <h3>Founded 2025</h3>
-                <p>Building the next generation of SAP consulting</p>
+                <div className="avi-icon"><Rocket size={24} /></div>
+                <div>
+                  <h3>Founded 2025</h3>
+                  <p>Building the next generation of SAP consulting</p>
+                </div>
               </div>
               <div className="about-visual-item">
-                <div className="avi-icon">🌐</div>
-                <h3>India-Based, Global Ready</h3>
-                <p>Serving clients across domestic and international markets</p>
+                <div className="avi-icon"><Globe size={24} /></div>
+                <div>
+                  <h3>India-Based, Global Ready</h3>
+                  <p>Serving clients across domestic and international markets</p>
+                </div>
               </div>
               <div className="about-visual-item">
-                <div className="avi-icon">⚡</div>
-                <h3>Agile Delivery</h3>
-                <p>Sprint-based delivery with continuous feedback loops</p>
+                <div className="avi-icon"><Zap size={24} /></div>
+                <div>
+                  <h3>Agile Delivery</h3>
+                  <p>Sprint-based delivery with continuous feedback loops</p>
+                </div>
               </div>
             </div>
           </div>
@@ -59,25 +66,25 @@ export default function About() {
       <section id="why" aria-labelledby="why-h">
         <div className="container">
           <h2 id="why-h">Why Choose Avsora?</h2>
-          <p className="section-sub" style={{ color: 'rgba(255,255,255,.82)' }}>We don't just implement SAP — we become your long-term technology partner, ensuring every solution delivers lasting value.</p>
+          <p className="section-sub">We don't just implement SAP — we become your long-term technology partner, ensuring every solution delivers lasting value.</p>
           <div className="why-grid">
             <div className="why-card">
-              <div className="why-icon">🏆</div>
+              <div className="why-icon"><Award size={28} /></div>
               <h3>Certified SAP Professionals</h3>
               <p>Our consultants hold SAP certifications across BTP, S/4HANA, and functional modules — ensuring gold-standard delivery on every project.</p>
             </div>
             <div className="why-card">
-              <div className="why-icon">🔄</div>
+              <div className="why-icon"><RefreshCw size={28} /></div>
               <h3>End-to-End Delivery</h3>
               <p>From blueprinting and build through testing, go-live, and hypercare — we own and manage the full project lifecycle.</p>
             </div>
             <div className="why-card">
-              <div className="why-icon">⚡</div>
+              <div className="why-icon"><Zap size={28} /></div>
               <h3>Agile Methodology</h3>
               <p>Sprint-based delivery with regular demos and feedback loops keeps projects on time, on scope, and on budget.</p>
             </div>
             <div className="why-card">
-              <div className="why-icon">📞</div>
+              <div className="why-icon"><PhoneCall size={28} /></div>
               <h3>Post Go-Live Support</h3>
               <p>Dedicated hypercare and long-term support after go-live with proactive monitoring and fast response times.</p>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import { CheckCircle } from 'lucide-react';
 
 export default function CareersForm() {
   const [status, setStatus] = useState<'' | 'loading' | 'success'>('');
@@ -60,8 +61,8 @@ export default function CareersForm() {
           {status === 'loading' ? 'Sending...' : 'Submit Application'}
         </button>
         {status === 'success' && (
-          <div className="form-success" style={{ display: 'block' }}>
-            ✅ Application received! Our team will review and be in touch within 5 business days.
+          <div className="form-success" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+            <CheckCircle size={18} /> Application received! Our team will review and be in touch within 5 business days.
           </div>
         )}
       </form>
