@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+Sitemap: https://avsorasoftware.com/sitemap.xml
