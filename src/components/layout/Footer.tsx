@@ -28,11 +28,11 @@ export default function Footer() {
           </div>
           <div className="footer-col">
             <h3>Services</h3>
-            <Link href="/services">SAP S/4HANA</Link>
-            <Link href="/services">SAP BTP &amp; AI</Link>
-            <Link href="/services">Fiori / UI5</Link>
-            <Link href="/services">Integration</Link>
-            <Link href="/services">Functional Consulting</Link>
+            <Link href="/services/sap-s4hana">SAP S/4HANA</Link>
+            <Link href="/services/sap-btp-ai">SAP BTP &amp; AI</Link>
+            <Link href="/services/fiori-ui5">Fiori / UI5</Link>
+            <Link href="/services/integration">Integration</Link>
+            <Link href="/services/functional-consulting">Functional Consulting</Link>
           </div>
           <div className="footer-col">
             <h3>Company</h3>
