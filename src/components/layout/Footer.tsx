@@ -21,7 +21,7 @@ export default function Footer() {
                 <Instagram size={18} />
                 <span>@avsora_software</span>
               </a>
-              <a href="https://www.linkedin.com/company/avsora-software" target="_blank" rel="noopener noreferrer" aria-label="Connect with Avsora Software on LinkedIn">
+              <a href="https://www.linkedin.com/company/avsora/" target="_blank" rel="noopener noreferrer" aria-label="Connect with Avsora Software on LinkedIn">
                 <Linkedin size={18} />
                 <span>Avsora Software</span>
               </a>
