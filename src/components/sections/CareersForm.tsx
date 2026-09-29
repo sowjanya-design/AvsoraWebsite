@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { CheckCircle, UploadCloud, Linkedin, Link as LinkIcon } from 'lucide-react';
+import { CheckCircle, UploadCloud, Link as LinkIcon } from 'lucide-react';
 
 export default function CareersForm() {
   const [status, setStatus] = useState<'' | 'loading' | 'success'>('');
@@ -104,7 +104,7 @@ export default function CareersForm() {
         <h4 style={{ fontSize: '16px', fontWeight: '600', color: '#1e293b', marginBottom: '16px', marginTop: '32px' }}>Online Profiles</h4>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', marginBottom: '32px' }}>
           <div className="form-group" style={{ marginBottom: 0 }}>
-            <label htmlFor="c-linkedin" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Linkedin size={14} /> LinkedIn Profile URL *</label>
+            <label htmlFor="c-linkedin" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><LinkIcon size={14} /> LinkedIn Profile URL *</label>
             <input type="url" id="c-linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile" required aria-required="true" />
           </div>
           <div className="form-group" style={{ marginBottom: 0 }}>
